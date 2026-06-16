@@ -321,28 +321,14 @@
             </div>
             
             <div class="hero-actions">
-              <button class="btn btn-primary" onclick="setPage('training')">
+              <button class="btn btn-primary" onclick="showPage('training')">
   Log Today's Workout
 </button>
 
-<button class="btn btn-secondary" onclick="setPage('coach')">
+<button class="btn btn-secondary" onclick="showPage('coach')">
   Ask AI Coach
 </button>
-
-<script>
-  function setPage(page) {
-    document.getElementById('training-view').classList.remove('active');
-    document.getElementById('coach-view').classList.remove('active');
-
-    if (page === 'training') {
-      document.getElementById('training-view').classList.add('active');
-    }
-
-    if (page === 'coach') {
-      document.getElementById('coach-view').classList.add('active');
-    }
-  }
-</script> </div>
+ </div>
           </div>
           
           <!-- Second Row (Metrics summaries) -->
