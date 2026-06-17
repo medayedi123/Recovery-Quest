@@ -91,10 +91,7 @@ Vanilla HTML, CSS, and JavaScript. No frameworks, no backend, no database. Every
 
 Gonna be transparent here because I think it's actually worth talking about.
 
-AI was basically my co-developer on this. Not in a "generate the whole thing for me" way but more like having a really patient senior dev sitting next to you at 2am helping you figure out why your scoring algorithm is broken. It helped me design the XP system, structure the modules, fix bugs I stared at for an hour without seeing, and think through features before I built them.
-
-I still wrote a ton of code. I still made all the decisions. But having that feedback loop made me way more ambitious about what I could actually build.
-
+During development, I used AI-assisted tools to help with brainstorming ideas, writing boilerplate code, squashing bugs, and improving documentation. But here’s the key: I treated everything the AI generated as a rough draft, not a final product. Every suggestion was manually reviewed, adapted to fit my project’s specific context, and thoroughly tested before I integrated it. AI was a helpful assistant—great for handling repetitive tasks or offering a fresh perspective—but I made all the design decisions, architectural choices, and creative calls myself.
 ---
 
 ## How to use it
