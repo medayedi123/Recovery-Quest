@@ -108,16 +108,26 @@ function awardDailyConsistencyXP(consistencyScore) {
 /* ---------- PAGE SYSTEM ---------- */
 
 function showPage(page) {
-
+    // Hide all view panels
     document.querySelectorAll(".view-panel").forEach(p => {
         p.style.display = "none";
     });
 
+    // Show the selected panel
     const active = document.getElementById(page + "-view");
-
     if (active) {
         active.style.display = "block";
     }
+
+    // Update active nav highlighting
+    document.querySelectorAll('nav a[data-page]').forEach(link => {
+        const navItem = link.closest('li') || link.parentElement; // assuming structure
+        if (link.getAttribute('data-page') === page) {
+            navItem.classList.add('active');
+        } else {
+            navItem.classList.remove('active');
+        }
+    });
 }
 
 /* ---------- NAVIGATION SYSTEM (CONNECTED TO BOTH SIDEBAR + MOBILE) ---------- */

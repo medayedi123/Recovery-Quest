@@ -12,7 +12,7 @@ let nutriData = JSON.parse(localStorage.getItem("nutriData")) || {
 };
 
 /* =========================
-HELPER SAFE GET
+HELPER SAFE GE
 ========================= */
 function el(id) {
   return document.getElementById(id);

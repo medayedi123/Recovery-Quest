@@ -11,10 +11,6 @@
   
   <!-- CSS Stylesheets -->
    <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/theme.css">
-  <link rel="stylesheet" href="css/layout.css">
-  <link rel="stylesheet" href="css/components.css">
-  <link rel="stylesheet" href="css/pages.css">
   <link rel="stylesheet" href="css/auth.css">
   
 </head>
@@ -328,6 +324,7 @@
 <button class="btn btn-secondary" onclick="showPage('coach')">
   Ask AI Coach
 </button>
+
  </div>
           </div>
           
@@ -2317,12 +2314,13 @@ updateNutritionUI();
 </style>
 
 <nav class="tabs-navigation">
-  <button class="tab-btn active" data-tab="today">Today's Workout</button>
+  <button class="tab-btn active" data-tab="programs">Programs</button>
+  <button class="tab-btn " data-tab="today">Today's Workout</button>
   <button class="tab-btn" data-tab="exercises">Exercises</button>
-  <button class="tab-btn" data-tab="programs">Programs</button>
+
 </nav>
 
-<div id="tab-today" class="tab-content active">
+<div id="tab-today" class="tab-content">
 
   <div class="training-layout">
 
@@ -2441,7 +2439,7 @@ updateNutritionUI();
 
 </div>
 
-<div id="tab-programs" class="tab-content">
+<div id="tab-programs" class="tab-content active">
 
   <div class="program-grid" id="program-grid"></div>
 
@@ -2540,70 +2538,7 @@ updateNutritionUI();
 
       </div>
 
-      <!-- Breathing -->
-      <div class="glass-card">
-
-        <div style="display:flex;
-                    justify-content:space-between;
-                    align-items:center;
-                    margin-bottom:1rem;">
-
-          <div>
-            <h3 style="font-size:1.1rem; color:#fff;">
-              Box Breathing
-            </h3>
-
-            <p style="font-size:0.75rem;
-                      color:var(--text-secondary);
-                      margin-top:0.15rem;">
-              Nervous system recovery protocol
-            </p>
-          </div>
-
-          <span class="badge badge-recovery">
-            Breathing
-          </span>
-
-        </div>
-
-        <div id="breathing-visualizer"
-             class="breathing-visualizer-container">
-
-          <div class="breathing-ring-outer">
-
-            <div class="breathing-ring-inner">
-
-              <span id="breath-label"
-                    class="breathing-label">
-                Ready
-              </span>
-
-            </div>
-
-          </div>
-
-          <div style="text-align:center;">
-
-            <div id="breath-timer-val"
-                 style="font-size:2rem;
-                        font-weight:800;
-                        color:#fff;">
-              2:00
-            </div>
-
-            <button id="breath-trigger-btn"
-                    class="btn btn-primary"
-                    style="margin-top:1rem;">
-
-              Start Guided Breathing
-
-            </button>
-
-          </div>
-
-        </div>
-
-      </div>
+      
 
     </div>
 
@@ -3206,18 +3141,12 @@ updateNutritionUI();
   <script src="js/training.js"></script>
   <script src="js/recovery.js"></script>
   <script src="js/progress.js"></script>
-  <script src="js/coach.js"></script>
   <script src="js/gamification.js"></script>
   <script src="script.js"></script>
-
+  <script src="js/coach.js"></script>
 
 </body>
 </html>
-
-
-
-
-
 
 
 

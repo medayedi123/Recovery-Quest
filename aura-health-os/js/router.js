@@ -46,15 +46,7 @@ window.store.subscribe((state) => {
     appShell.classList.remove('sidebar-collapsed');
   }
 
-  // 2. Active Tab Menu items highlighting
-  navItems.forEach(item => {
-    const link = item.querySelector('a');
-    if (link && link.getAttribute('data-page') === state.activePage) {
-      item.classList.add('active');
-    } else {
-      item.classList.remove('active');
-    }
-  });
+
 
   // Mobile navigation items
   mobileItems.forEach(item => {
